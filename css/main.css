@@ -1,0 +1,164 @@
+/*! Fonts */
+
+/* livvic-regular - latin */
+
+@font-face {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+    url("../fonts/livvic-v13-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/livvic-v13-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* livvic-600 - latin */
+
+@font-face {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    src: local(""),
+    url("../fonts/livvic-v13-latin-600.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/livvic-v13-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* livvic-700 - latin */
+
+@font-face {
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 700;
+    src: local(""),
+    url("../fonts/livvic-v13-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url("../fonts/livvic-v13-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* VARIABLES */
+
+:root {
+    --main-midnight-green: #014E56;
+    --main-light-coral: #F67E7E;
+    --main-white-color: #fff;
+    --main-black-color: #000;
+    --main-aqua: #79C8C7;
+    --main-police-blue: #2C6269;
+    --main-jungle-green: #2C6269;
+    --main-state-green: #012F34;
+    --main-dark-green: #002529;
+}
+
+/* GENERAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Livvic", "Arial", sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.feature {
+    background-color: var(--main-state-green);
+    color: var(--main-white-color);
+    padding: 140px 0;
+    position: relative;
+}
+
+.feature::after {
+    bottom: calc(50% + -345px);
+    left: calc(50% + 647px);
+    content: "";
+    display: inline-block;
+    background-image: url("../images/after.png");
+    width: 200px;
+    height: 244px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.feature__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature__left-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.feature__left-title::before {
+    content: "";
+    position: absolute;
+    top: -54px;
+    background-image: url("../images/line.svg");
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 4px;
+}
+
+.feature__right-item {
+    display: flex;
+    align-items: center;
+}
+
+.feature__right-item::before {
+    content: "";
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    padding-right: 23px;
+}
+
+.feature__right-item:nth-child(1)::before {
+    background-image: url("../images/person-logo.svg");
+}
+
+.feature__right-item:nth-child(2)::before {
+    background-image: url("../images/settings-logo.svg");
+}
+
+.feature__right-item:nth-child(3)::before {
+    background-image: url("../images/starategia-logo.svg");
+}
+
+.feature__right-heading {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--main-light-coral);
+}
+
+.feature__right-text {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--main-white-color);
+    margin: 0;
+    padding: 0;
+}
