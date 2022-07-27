@@ -10,64 +10,80 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    
-    <!-- FEATURE SECTION START -->
+        <!-- HEADER START -->
+  <header class="site-header">
+    <div class="container">
+      <div class="site-header__inner">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="./images/logo.svg" alt="Site's logo" width="160" height="40">
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">About</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="contact-link" href="#">Contact us</a>
+      </div>
+    </div>
+  </header>
+  <!-- HEADER FINISH -->
 
-    <section class="feature">
-
+   <!-- HERO START -->
+   <section class="site-hero hero">
+    <div class="container">
+      <div class="hero__inner">
+        <h1 class="hero__heading">Find the <br> best <span class="hero__heading-marked">talent</span></h1>
+        <p class="hero__text">
+          Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- HERO FINISH -->
+  
+     <!-- RESULTS START -->
+     <section class="site-main__results results">
         <div class="container">
-
-            <div class="feature__inner">
-
-                <div class="feature__left">
-
-                    <h2 class="feature__left-title">Build & manage <br> distributed teams <br> like no one else.</h2>
-
-                </div>
-
-                <ul class="feature__right">
-
-                    <li style="margin-bottom: 32px;" class="feature__right-item">
-
-                       <div class="feature__right-item-box">
-
-                        <h3 class="feature__right-heading">Experienced Individuals</h3>
-
-                        <p class="feature__right-text">Our network is made up of highly experienced professionals <br> who are passionate about what they do.</p>
-
-                       </div>
-
-                    </li>
-
-                    <li style="margin-bottom: 32px;" class="feature__right-item">
-
-                       <div class="feature__right-item-box">
-
-                        <h3 class="feature__right-heading">Easy to Implement</h3>
-
-                        <p class="feature__right-text">Our processes have been refined over years of implementation <br> meaning our teams always deliver.</p>
-
-                       </div>
-
-                    </li>
-
-                    <li style="margin-bottom: 32px;" class="feature__right-item">
-
-                       <div class="feature__right-item-box">
-
-                        <h3 class="feature__right-heading">Enhanced Productivity</h3>
-
-                        <p class="feature__right-text">Our customized platform with in-built analytics helps you <br> manage your distributed teams.</p>
-
-                       </div>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
+          <div class="results__inner">
+            <h2 class="results__heading">Delivering real results for top <br> companies. Some of our <span class="results__heading-marked">success stories.</span></h2>
+            
+            <ul class="results__list">
+              <li class="results__item">
+                <blockquote class="results__item-text">
+                  “The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.”
+                </blockquote>
+                
+                <p class="results__item-title">Kady Baker</p>
+                <i class="results__item-subtitle">Product Manager at Bookmark</i>
+              </li>
+  
+              <li class="results__item">
+                <blockquote class="results__item-text">
+                  “We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”
+                </blockquote>
+                
+                <p class="results__item-title">Aiysha Reese</p>
+                <i class="results__item-subtitle">Founder of Manage</i>
+              </li>
+  
+              <li class="results__item">
+                <blockquote class="results__item-text">
+                  “Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”
+                </blockquote>
+                
+                <p class="results__item-title">Arthur Clarke</p>
+                <i class="results__item-subtitle">Co-founder of MyPhysio</i>
+              </li>
+            </ul>
+          </div>
         </div>
+      </section>
+      <!-- RESULTS FINISH -->
 
     </section>
 
@@ -171,7 +187,6 @@
     </footer>
 
     <!-- FOOTER FINISH -->
-
     <script src="./js/main.js"></script>
 </body>
 </html>
