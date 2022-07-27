@@ -322,3 +322,143 @@ ul {
     margin: 0;
     padding: 0;
 }
+/* RESULTS START */
+
+.results {
+    position: relative;
+    background-color:  var(--main-jungle-green);
+}
+
+.results::before {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 760px);
+    width: 147px;
+    height: 100px;
+    background-image: url("../images/deliver-before-img.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+.results::after {
+    position: absolute;
+    bottom: -26px;
+    right: calc(50% - 760px);
+    width: 147px;
+    height: 100px;
+    background-image: url("../images/deliver-after-img.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+.results__inner {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+}
+
+.results__heading {
+    margin: 0;
+    margin-bottom: 56px;
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+
+.results__heading-marked {
+    color: var(--main-aqua);
+}
+
+.results__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.results__item {
+    position: relative;
+    width: 350px;
+    padding-top: 160px;
+}
+
+.results__item::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 67px;
+    height: 56px;
+    background-image: url("../images/quote-logo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+}
+
+.results__item::after {
+    content: "";
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.results__item:nth-child(1):after {
+    background-image: url("../images/deliver-person-one.png");
+}
+
+.results__item:nth-child(2):after {
+    background-image: url("../images/deliver-person-two.png");
+}
+
+.results__item:nth-child(3):after {
+    background-image: url("../images/deliver-person-three.png");
+}
+    .results__item-text {
+    position: absolute;
+    top: 36px;
+    margin: 0;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--main-white-color);
+    margin-bottom: 24px;
+}
+
+.results__item-title {
+    margin: 0;
+    margin-bottom: 2px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--main-aqua);
+}
+
+.results__item-subtitle {
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--main-white-color);
+    margin-bottom: 32px;
+    display: inline-block;
+}
+/* RESULTS finish*/
