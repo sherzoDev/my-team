@@ -680,6 +680,7 @@ ul {
 }
 .left {
     width: 350px;
+    margin-top: 80px;
 }
 .left__heading {
     margin: 0;
