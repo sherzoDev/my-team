@@ -38,11 +38,63 @@
 
         <section class="contact">
 
-            <div class="contaiener">
+            <div class="container">
 
                 <div class="contact__inner">
 
-                    
+                    <div class="contact__left">
+
+                       <h2 class="contact__title">Contact</h2> 
+
+                       <h3 class="contact__title-hed">Ask us about</h3>
+
+                       <ul class="contact__list">
+
+                        <li class="contact__item">
+
+                            <p class="contact__person">The quality of our talent network</p>
+
+                        </li>
+
+                        <li class="contact__item">
+
+                            <p class="contact__person">Usage & implementation of our software</p>
+
+                        </li>
+
+                        <li class="contact__item">
+
+                            <p class="contact__person">How we help drive innovation</p>
+
+                        </li>
+
+                       </ul>
+
+                    </div>
+
+                    <form class="contact__form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+                        <label class="contact__label">
+                            <input class="contact__input-zone" type="text" name="user_name" id="user_name" minlength="2" maxlength="1000000" aria-label="Enter your name" required="" placeholder="Name">
+                            <span class="contact__invalid-text">This field is required</span>
+                        </label>
+                        <label class="contact__label">
+                            <input class="contact__input-zone" type="email" name="email_adress" id="email_adress" aria-label="Enter email adress" required="" placeholder="Email Address">
+                            <span class="contact__invalid-text">This field is required</span>
+                        </label>
+                        <label class="contact__label">
+                            <input class="contact__input-zone" type="text" name="company_name" id="company_name" minlength="2" maxlength="1000000" aria-label="Enter company name" required="" placeholder="Company Name">
+                            <span class="contact__invalid-text">This field is required</span>
+                        </label>
+                        <label class="contact__label">
+                            <input class="contact__input-zone" type="text" name="title_text" id="title_text" minlength="2" maxlength="1000000" aria-label="Enter title" required="" placeholder="Title">
+                            <span class="contact__invalid-text">This field is required</span>
+                        </label>
+                        <label class="contact__label">
+                            <textarea class="contact__input-zone contact__input-zone--message" name="user_message" id="user_message" minlength="3" maxlength="100000" aria-label="Enter your message" required="" placeholder="Message"></textarea>
+                            <span class="contact__invalid-text">This field is required</span>
+                        </label>
+                        <button class="contact__button" type="submit">submit</button>
+                    </form>
 
                 </div>
 
