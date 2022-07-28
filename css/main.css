@@ -680,6 +680,7 @@ ul {
 }
 .left {
     width: 350px;
+    margin-top: 80px;
 }
 .left__heading {
     margin: 0;
@@ -692,6 +693,7 @@ ul {
     position: relative;
     width: 730px;
     padding-top: 40px;
+    padding-top: 79px;
 }
 .right::before{
     content: "";
